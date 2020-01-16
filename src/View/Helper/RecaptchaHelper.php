@@ -28,7 +28,7 @@ class RecaptchaHelper extends Helper
      *
      * @var string
      */
-    protected static $secureApiUrl = "https://www.google.com/recaptcha/api";
+    protected static $secureApiUrl = "https://www.recaptcha.net/recaptcha/api";
 
     /**
      * Default configuration.
@@ -204,7 +204,7 @@ class RecaptchaHelper extends Helper
             }
         }
         $js .= "};</script>";
-        $js .= '<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>';
+        $js .= '<script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>';
         //debug($js);
         return $js;
     }

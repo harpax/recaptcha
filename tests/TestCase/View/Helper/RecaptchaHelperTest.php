@@ -57,7 +57,7 @@ class RecaptchaHelperTest extends TestCase
             'theme' => 'light',
             // If no type is found anywhere
             'type' => 'image',
-            'secureApiUrl' => 'https://www.google.com/recaptcha/api',
+            'secureApiUrl' => 'https://www.recaptcha.net/recaptcha/api',
             // reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
             'langAccepted' => [
                 'ar',
@@ -154,7 +154,7 @@ class RecaptchaHelperTest extends TestCase
 
         $expected = '<div class="g-recaptcha" data-sitekey="goodKey" data-theme="light" data-type="image"></div>
         <script type="text/javascript"
-        src="https://www.google.com/recaptcha/api.js?hl=fr">
+        src="https://www.recaptcha.net/recaptcha/api.js?hl=fr">
         </script>';
 
         // $this->assertEquals($expected, $this->Recaptcha->display($options));
@@ -166,7 +166,7 @@ class RecaptchaHelperTest extends TestCase
 
         $expected = '<div class="g-recaptcha" data-sitekey="" data-theme="light" data-type="image"></div>
         <script type="text/javascript"
-        src="https://www.google.com/recaptcha/api.js?hl=en">
+        src="https://www.recaptcha.net/recaptcha/api.js?hl=en">
         </script>';
 
         // $this->assertEquals($expected, $this->Recaptcha->display($options));

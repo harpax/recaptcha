@@ -50,12 +50,12 @@ class Recaptcha
     /**
      * @var string
      */
-    protected static $signupUrl = "https://www.google.com/recaptcha/admin";
+    protected static $signupUrl = "https://www.recaptcha.net/recaptcha/admin";
 
     /**
      * @var string
      */
-    protected static $siteVerifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+    protected static $siteVerifyUrl = "https://www.recaptcha.net/recaptcha/api/siteverify";
 
     /**
      * @var string
